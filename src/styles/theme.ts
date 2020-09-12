@@ -4,7 +4,7 @@ export default {
     gutter: '3.2rem'
   },
   border: {
-    radius: '0.4rem'
+    radius: '0.5rem'
   },
   font: {
     family:
@@ -13,13 +13,13 @@ export default {
     normal: 400,
     bold: 700,
     sizes: {
-      small: '1.2rem',
-      regular: '1.6rem',
-      medium: '2.4rem',
-      large: '2.8rem',
-      xlarge: '3.2rem',
-      xxlarge: '4.8rem',
-      huge: '6.4rem'
+      small: '0.8rem',
+      regular: '1rem',
+      medium: '1.5rem',
+      large: '2rem',
+      xlarge: '2.5rem',
+      xxlarge: '3rem',
+      huge: '5rem'
     }
   },
   colors: {
@@ -34,16 +34,18 @@ export default {
     black: '#030517',
     lightGray: '#EAEAEA',
     gray: '#8F8F8F',
-    darkGray: '#2E2F42'
+    darkGray: '#2E2F42',
+    darkBg: '#360a0a'
   },
   spacings: {
-    xxsmall: '0.8rem',
-    xsmall: '1.6rem',
-    small: '2.4rem',
-    medium: '3.2rem',
-    large: '4.0rem',
-    xlarge: '4.8rem',
-    xxlarge: '5.6rem'
+    xxxsmall: '0.2rem',
+    xxsmall: '0.4rem',
+    xsmall: '0.8rem',
+    small: '1.6rem',
+    medium: '2.4rem',
+    large: '3.2rem',
+    xlarge: '4.0rem',
+    xxlarge: '4.8rem'
   },
   layers: {
     base: 10,

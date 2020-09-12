@@ -26,6 +26,9 @@ export const Title = styled.h1`
     text-transform: uppercase;
     margin-bottom: ${theme.spacings.medium};
     color: ${theme.colors.primary};
+    line-height: 1;
+    margin: 0;
+    font-weight: ${theme.font.bold};
 
     ${media.lessThan('small')`
       font-size: ${theme.font.sizes.xxlarge}
@@ -37,6 +40,9 @@ export const Description = styled.h2`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
     font-weight: ${theme.font.normal};
+    line-height: 1.5;
+    margin: 0;
+    color: ${theme.colors.white};
   `}
 `;
 

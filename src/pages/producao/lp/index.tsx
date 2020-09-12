@@ -1,9 +1,5 @@
-import LpForm from 'components/LpForm';
+import MainLP from 'components/pages/LadingPage';
 
 export default function LandingPage() {
-  return (
-    <>
-      <LpForm />
-    </>
-  );
+  return <MainLP />;
 }

@@ -21,25 +21,33 @@ export const Title = styled.h1`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.huge};
     text-transform: uppercase;
+    font-weight: ${theme.font.bold};
+    color: ${theme.colors.white};
+    margin: 0;
+    line-height: 1;
 
     ${media.lessThan('small')`
       font-size: ${theme.font.sizes.xxlarge}
-    `}
+    `};
   `}
 `;
 
 export const Description = styled.h2`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.medium};
+    font-size: ${theme.font.sizes.xlarge};
     font-weight: ${theme.font.normal};
-    margin-bottom: ${theme.spacings.medium};
+    color: ${theme.colors.white};
+    line-height: 1;
   `}
 `;
 
 export const Paragraph = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.regular};
-    font-weight: ${theme.font.light};
-    margin-bottom: ${theme.spacings.small};
+    color: ${theme.colors.white};
   `}
+`;
+
+export const Content = styled.div`
+  padding: 2rem;
 `;

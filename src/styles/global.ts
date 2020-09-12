@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   /* ubuntu-300 - latin */
@@ -37,26 +37,11 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
-  ${({ theme }) => css`
-    html {
-      font-size: 62.5%;
-    }
-
     html,
     body,
     #__next {
       height: 100%;
     }
-
-    body {
-      font-family: ${theme.font.family};
-    }
-
-    p {
-      line-height: 1.55;
-    }
-  `}
-
 `;
 
 export default GlobalStyles;

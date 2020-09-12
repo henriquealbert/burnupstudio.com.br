@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { RightArrowCircle } from '@styled-icons/boxicons-regular/RightArrowCircle';
 
 export const Wrapper = styled.button<ButtonProps>`
-  ${({ theme, color }) => css`
+  ${({ theme, color, icon }) => css`
     padding: ${theme.spacings.xsmall} ${theme.spacings.small};
     border-radius: ${theme.border.radius};
     border: none;
@@ -13,11 +13,16 @@ export const Wrapper = styled.button<ButtonProps>`
     cursor: pointer;
     color: ${theme.colors.white};
     transition: all 200ms ease-in-out;
+    outline: none;
 
     &:hover {
       ${color === 'primary'
         ? `background: ${theme.colors.darkPrimary}`
         : `background: ${theme.colors.darkSecondary}`}
+    }
+
+    svg {
+      display: ${icon ? 'inline' : 'none'};
     }
   `}
 `;

@@ -1,11 +1,11 @@
 import Header from 'components/Header';
-import Main from 'components/Main';
+import Home from 'components/pages/Home';
 
-export default function Home() {
+export default function Index() {
   return (
     <>
       <Header />
-      <Main />
+      <Home />
     </>
   );
 }

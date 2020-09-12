@@ -4,11 +4,11 @@ import styled, { css } from 'styled-components';
 
 const wrapperModifiers = {
   normal: () => css`
-    width: 15rem;
+    width: 10rem;
   `,
 
   large: () => css`
-    width: 25rem;
+    width: 20rem;
   `
 };
 
