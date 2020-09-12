@@ -5,7 +5,7 @@ import * as S from './styles';
 const ListaDeEsperaForm = () => {
   return (
     <S.Wrapper>
-      <Form action="https://paginas.rocks/pages/index/461910" method="post">
+      <form action="https://paginas.rocks/pages/index/461910" method="post">
         <Input id="id" name="id" type="hidden" value="461910" />
         <Input id="mid" name="mid" type="hidden" value="461910" />
         <Input id="pid" name="pid" type="hidden" value="16462002" />
@@ -50,7 +50,7 @@ const ListaDeEsperaForm = () => {
           Quero Entrar na Lista Vip de Espera
         </Button>
         <Input type="hidden" id="source" name="source" value="" />
-      </Form>
+      </form>
     </S.Wrapper>
   );
 };

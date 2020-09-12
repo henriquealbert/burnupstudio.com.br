@@ -11,7 +11,7 @@ const LpForm = () => {
       </Typography.Title>
       <strong>100% Online e Gratuito.</strong>
 
-      <Form action="https://paginas.rocks/pages/index/472323" method="post">
+      <form action="https://paginas.rocks/pages/index/472323" method="post">
         <Input id="id" name="id" type="hidden" value="472323" />
         <Input id="mid" name="mid" type="hidden" value="472323" />
         <Input id="pid" name="pid" type="hidden" value="16774321" />
@@ -55,7 +55,7 @@ const LpForm = () => {
           INSCREVA-SE GRATUITAMENTE
         </Button>
         <Input type="hidden" id="source" name="source" value="" />
-      </Form>
+      </form>
     </S.Wrapper>
   );
 };
