@@ -44,6 +44,7 @@ const ListaDeEsperaForm = () => {
             name="phone"
             placeholder="Informe o seu WhatsApp com DDD"
             type="text"
+            defaultValue={' '}
           />
         </Form.Item>
         <Button type="primary" htmlType="submit" block>

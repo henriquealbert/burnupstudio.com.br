@@ -49,6 +49,7 @@ const LpForm = () => {
             name="phone"
             placeholder="Digite seu WhatsApp com DDD (Opcional)"
             type="text"
+            defaultValue={' '}
           />
         </Form.Item>
         <Button type="primary" htmlType="submit" block>
