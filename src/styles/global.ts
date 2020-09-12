@@ -42,6 +42,11 @@ const GlobalStyles = createGlobalStyle`
     #__next {
       height: 100%;
     }
+
+  .ant-btn {
+    white-space: normal;
+    height: auto;
+  }
 `;
 
 export default GlobalStyles;

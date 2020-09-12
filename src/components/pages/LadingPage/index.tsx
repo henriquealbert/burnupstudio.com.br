@@ -1,6 +1,6 @@
 import Logo from 'components/Logo';
 import LpForm from 'components/LpForm';
-import { Col, Row, Anchor } from 'antd';
+import { Anchor } from 'antd';
 
 import * as S from './styles';
 
@@ -17,15 +17,14 @@ export default function MainLP() {
             <Link href="#sobre" title="Sobre" />
           </Anchor>
         </S.Header>
-        <Row id="inscricao">
-          <Col span={9} offset={2}>
-            <S.TextWrapper>
-              Faça parte do <span>Futuro</span> da Produção de Música Eletrônica
-            </S.TextWrapper>
-
+        <S.TextWrapper>
+          Faça parte do <span>Futuro</span> da Produção de Música Eletrônica
+        </S.TextWrapper>
+        <S.InscricaoWrapper id="inscricao">
+          <S.InscricaoItem>
             <LpForm />
-          </Col>
-          <Col span={9} offset={2}>
+          </S.InscricaoItem>
+          <S.InscricaoItem>
             <S.ImgWrapper>
               <img
                 src="/img/parkart.jpg"
@@ -33,18 +32,20 @@ export default function MainLP() {
                 loading="lazy"
               />
             </S.ImgWrapper>
-          </Col>
-        </Row>
+          </S.InscricaoItem>
+        </S.InscricaoWrapper>
       </S.Wrapper>
 
       <S.About id="resumo">
         <S.AboutWrapper>
-          <h2>Sobre a Semana da Produção de Música Eletrônica</h2>
+          <h2>
+            <span>Sobre</span> a Semana da Produção de Música Eletrônica
+          </h2>
           <S.AboutItems>
-            <S.AboutItemOne>
+            <S.AboutItemLast>
               <span>100% online</span>
               <p>e gratuito</p>
-            </S.AboutItemOne>
+            </S.AboutItemLast>
             <S.AboutItemMiddle>
               <span>Dos dias</span>
               <p>28.09 até 05.10</p>
@@ -62,7 +63,6 @@ export default function MainLP() {
           <h2>
             O que você <span>vai aprender</span>:
           </h2>
-          <img src="" alt="img" />
         </S.ConteudoHeader>
         <S.Listas>
           <S.ConteudoLista>
@@ -134,42 +134,50 @@ export default function MainLP() {
             </li>
           </S.ConteudoLista>
         </S.Listas>
-        <div>
-          <h1 style={{ color: '#fff' }}>FAÇA PARTE DO FUTURO DA PRODUÇÃO</h1>
-          <Anchor affix={false}>
-            <Link href="#inscricao" title="INSCREVA-SE" />
-          </Anchor>
-        </div>
+        <S.CTA>
+          <h2 style={{ color: '#fff' }}>FAÇA PARTE DO FUTURO DA PRODUÇÃO</h2>
+          <S.CtaLink>
+            <Anchor affix={false}>
+              <Link href="#inscricao" title="INSCREVA-SE" />
+            </Anchor>
+          </S.CtaLink>
+        </S.CTA>
       </S.Conteudo>
 
-      <div id="sobre">
-        <div>
-          <img src="" alt="Henrique Albert" />
-        </div>
-        <div>
-          <h2>Henrique Albert</h2>
-          <p>
-            Professor de Produção de Música Eletrônica, Produtor desde 2009,
-            atuou como DJ tocando por todo Brasil e também no exterior,
-            empreendedor digital, fundador da “Burn Up Studio”, criador do curso
-            de Produção de Música Eletrônica “Alpha Experience” que hoje conta
-            com mais de 320 alunos e é um dos poucos cursos brasileiros com
-            avaliação 5 estrelas e 100% de satisfação .
-          </p>
-          <p>
-            Henrique é um entusiasta pelo ensino de produção de música
-            eletrônica, que propõe o uso de métodos e técnicas completamente
-            diferentes dos tradicionais, buscando sempre as formas de
-            aprendizado mais efetivas possíveis, fazendo com que os seus alunos
-            tenham resultados exponenciais em um curto espaço de tempo.
-          </p>
-          <Anchor affix={false}>
-            <Link href="#inscricao" title="INSCREVA-SE" />
-          </Anchor>
-        </div>
-      </div>
+      <S.SobreContainer id="sobre">
+        <S.Sobre>
+          <S.ImgContainer>
+            <img src="/img/henrique.jpg" alt="Henrique Albert" loading="lazy" />
+          </S.ImgContainer>
+          <S.TextContainer>
+            <h2>Sobre o Instrutor - Henrique Albert</h2>
+            <p>
+              Professor de Produção de Música Eletrônica, Produtor desde 2009,
+              atuou como DJ tocando por todo Brasil e também no exterior,
+              empreendedor digital, fundador da “Burn Up Studio”, criador do
+              curso de Produção de Música Eletrônica “Alpha Experience” que hoje
+              conta com mais de 320 alunos e é um dos poucos cursos brasileiros
+              com avaliação 5 estrelas e 100% de satisfação .
+            </p>
+            <p>
+              Henrique é um entusiasta pelo ensino de produção de música
+              eletrônica, que propõe o uso de métodos e técnicas completamente
+              diferentes dos tradicionais, buscando sempre as formas de
+              aprendizado mais efetivas possíveis, fazendo com que os seus
+              alunos tenham resultados exponenciais em um curto espaço de tempo.
+            </p>
+            <S.CtaLink>
+              <Anchor affix={false}>
+                <Link href="#inscricao" title="INSCREVA-SE" />
+              </Anchor>
+            </S.CtaLink>
+          </S.TextContainer>
+        </S.Sobre>
+      </S.SobreContainer>
 
-      <div>FOOTER</div>
+      <S.Footer>
+        <p>Copyright 2020 - Burn Up Studio - Todos os direitos reservados</p>
+      </S.Footer>
     </>
   );
 }

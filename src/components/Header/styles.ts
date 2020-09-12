@@ -6,6 +6,9 @@ export const Wrapper = styled.header`
   top: 0;
   width: 100%;
   background: transparent;
+  ${({ theme }) => css`
+    z-index: ${theme.layers.menu};
+  `}
 `;
 
 export const NavBar = styled.nav`
@@ -27,6 +30,14 @@ export const NavBar = styled.nav`
       }
       li:last-child {
         margin: 0;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      margin: 0.5rem auto;
+
+      img {
+        width: 90px;
       }
     }
   `}

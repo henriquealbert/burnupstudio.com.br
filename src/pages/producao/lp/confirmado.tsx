@@ -1,7 +1,12 @@
-export default function LandingPageConfirmado() {
+import Header from 'components/Header';
+import LandingPageConfirmado from 'components/pages/LandingPageConfirmado';
+
+export default function LPConfirmado() {
   return (
-    <div>
-      <h1>Landing Page Confirmado</h1>
-    </div>
+    <>
+      <Header />
+
+      <LandingPageConfirmado />
+    </>
   );
 }
