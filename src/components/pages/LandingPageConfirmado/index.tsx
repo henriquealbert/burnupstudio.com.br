@@ -25,7 +25,7 @@ const LandingPageConfirmado = () => {
         <S.CTA>
           <Button
             type="primary"
-            href="#"
+            href="https://meugrupo.vip/c/267"
             target="_blank"
             rel="noreferrer noopener"
           >

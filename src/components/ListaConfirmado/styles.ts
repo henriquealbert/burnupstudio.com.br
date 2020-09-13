@@ -66,3 +66,23 @@ export const CheckSvg = styled.img`
     bottom: 0;
   }
 `;
+
+export const CTA = styled.div`
+  z-index: 10;
+
+  a {
+    background: #25d366;
+    border: 1px solid #25d366;
+    line-height: 1.2;
+    padding: 1rem 2rem;
+
+    span {
+      display: inline;
+    }
+
+    &:hover {
+      background: #128c7e;
+      border: 1px solid #128c7e;
+    }
+  }
+`;

@@ -7,6 +7,7 @@ import Document, {
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 import FacebookPixel from 'utils/Pixel/facebook';
+import GoogleAnalyticsPixel from 'utils/Pixel/ga';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -40,6 +41,7 @@ export default class MyDocument extends Document {
       <Html lang="pt-BR">
         <Head>
           <FacebookPixel />
+          <GoogleAnalyticsPixel />
         </Head>
         <body>
           <Main />
