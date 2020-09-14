@@ -12,6 +12,7 @@ if (typeof require !== 'undefined') {
 }
 
 module.exports = withCSS({
+  trailingSlash: true,
   cssModules: true,
   cssLoaderOptions: {
     importLoaders: 1,

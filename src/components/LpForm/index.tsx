@@ -6,7 +6,7 @@ const LpForm = () => {
   return (
     <S.Wrapper>
       <Typography.Title level={5}>
-        Se Inscreva e Aprenda a Como se Tornar um Produtor Profissional em
+        Se Inscreva e Aprenda a se Tornar um Produtor de Música Eletrônica em
         aproximadamente 6 meses.
       </Typography.Title>
       <strong>100% Online e Gratuito.</strong>
