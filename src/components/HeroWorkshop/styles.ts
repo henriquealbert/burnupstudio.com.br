@@ -7,10 +7,14 @@ export const Wrapper = styled.div`
     box-shadow: inset 0 0 0 2000px ${theme.colors.mainBg};
     color: #fff;
     width: 100%;
-    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding-bottom: 4rem;
+
+    @media screen and (min-width: 768px) {
+      height: 100%;
+    }
   `}
 `;
 

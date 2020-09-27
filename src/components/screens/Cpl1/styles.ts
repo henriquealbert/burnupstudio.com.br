@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.main`
-  height: 100%;
+  @media screen and (min-width: 768px) {
+    height: 100%;
+  }
 `;
 
 export const BottomSection = styled.div`
