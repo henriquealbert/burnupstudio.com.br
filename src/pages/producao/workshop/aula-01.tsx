@@ -1,7 +1,13 @@
+import Cpl1 from 'components/screens/Cpl1';
+import Head from 'next/head';
+
 export default function WorkshopAula01() {
   return (
-    <div>
-      <h1>WorkshopAula01</h1>
-    </div>
+    <>
+      <Head>
+        <title>Aula 01 - Semana da Produção de Música Eletrônica</title>
+      </Head>
+      <Cpl1 />
+    </>
   );
 }

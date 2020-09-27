@@ -1,5 +1,5 @@
 import Header from 'components/Header';
-import LandingPageConfirmado from 'components/pages/LandingPageConfirmado';
+import LandingPageConfirmado from 'components/screens/LandingPageConfirmado';
 import Head from 'next/head';
 
 export default function LPConfirmado() {

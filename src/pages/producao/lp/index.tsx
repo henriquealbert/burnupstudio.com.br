@@ -1,4 +1,4 @@
-import MainLP from 'components/pages/LadingPage';
+import MainLP from 'components/screens/LadingPage';
 import Head from 'next/head';
 
 export default function LandingPage() {
