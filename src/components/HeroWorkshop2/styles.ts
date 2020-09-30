@@ -2,19 +2,13 @@ import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    background: ${theme.colors.mainBg};
-    background: url(/img/bg.jpg) no-repeat center center fixed;
-    box-shadow: inset 0 0 0 2000px ${theme.colors.mainBg};
+    background: ${theme.colors.black};
     color: #fff;
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     padding-bottom: 4rem;
-
-    @media screen and (min-width: 768px) {
-      height: 100%;
-    }
   `}
 `;
 
@@ -111,21 +105,6 @@ export const NavLinkVideos = styled.nav`
 
 export const CTA = styled.div`
   margin-top: 2rem;
-  a {
-    background: #25d366;
-    border: 1px solid #25d366;
-    line-height: 1.2;
-    padding: 1rem;
-
-    span {
-      display: inline;
-    }
-
-    &:hover {
-      background: #128c7e;
-      border: 1px solid #128c7e;
-    }
-  }
 `;
 
 export const Video = styled.div`
@@ -158,4 +137,44 @@ export const Video = styled.div`
       position: initial;
     }
   }
+`;
+
+export const GenreVideosWrapper = styled.div`
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 4rem auto;
+
+  @media screen and (min-width: 900px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4rem;
+  }
+`;
+
+export const VideoGenreWrapper = styled.div`
+  ${({ theme }) => css`
+    margin-top: 2rem;
+    width: 100%;
+
+    h2 {
+      color: ${theme.colors.white};
+    }
+
+    div {
+      position: relative;
+      padding-bottom: 45%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+      width: 100%;
+      iframe,
+      object,
+      embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  `}
 `;

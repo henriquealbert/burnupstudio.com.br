@@ -1,6 +1,7 @@
 import Logo from 'components/Logo';
 import { WhatsAppOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
+import Link from 'next/link';
 
 import * as S from './styles';
 
@@ -19,7 +20,11 @@ const HeroWorkshop = () => {
           <S.NavLinkVideos>
             <ul>
               <li>
-                <img src="/img/Thumb1_small.png" alt="Aula 2" />
+                <Link href="/producao/workshop/ws-aula-02/">
+                  <a>
+                    <img src="/img/Thumb1_small.png" alt="Aula 2" />
+                  </a>
+                </Link>
               </li>
               <li>
                 <img src="/img/Thumb2_small.png" alt="Aula 3" />
