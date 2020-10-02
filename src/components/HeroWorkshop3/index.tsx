@@ -1,11 +1,21 @@
+import { useRef, useEffect } from 'react';
+
 import Logo from 'components/Logo';
-import { WhatsAppOutlined } from '@ant-design/icons';
-import { Button } from 'antd';
 import Link from 'next/link';
+import MyModal from 'components/MyModal';
+import PreInscricaoForm from 'components/PreInscricaoForm';
 
 import * as S from './styles';
 
-const HeroWorkshop = () => {
+const HeroWorkshop3 = () => {
+  const modal = useRef(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      document.getElementById('pre-inscricao')?.classList.add('show');
+    }, 2580000);
+  }, []);
+
   return (
     <S.Wrapper>
       <S.Container>
@@ -13,23 +23,23 @@ const HeroWorkshop = () => {
           <Logo color="white" />
         </S.HeaderWrapper>
         <S.Headline>
-          <span>AULA 01:</span>
-          Dominando o Programa de Produção
+          <span>AULA 03:</span>O Porquê Você Chegou Tarde para Produzir Música
+          Eletrônica!
         </S.Headline>
         <S.WrapperVideoLinks>
           <S.NavLinkVideos>
             <ul>
               <li>
-                <Link href="/producao/workshop/ws-aula-02/">
+                <Link href="/producao/workshop/aula-01/">
                   <a>
-                    <img src="/img/Thumb1_small.png" alt="Aula 2" />
+                    <img src="/img/Thumb0_small.png" alt="Aula 1" />
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/producao/workshop/aula-de-encerramento/">
+                <Link href="/producao/workshop/ws-aula-02/">
                   <a>
-                    <img src="/img/Thumb2_small.png" alt="Aula 3" />
+                    <img src="/img/Thumb1_small.png" alt="Aula 2" />
                   </a>
                 </Link>
               </li>
@@ -47,19 +57,17 @@ const HeroWorkshop = () => {
             ></iframe>
           </S.Video>
         </S.WrapperVideoLinks>
-        <S.CTA>
-          <Button
-            type="primary"
-            href="https://meugrupo.vip/c/267"
-            target="_blank"
-            rel="noreferrer noopener"
+        <S.CTA ref={modal} id="pre-inscricao">
+          <MyModal
+            buttonText="FAZER PRÉ-INSCRIÇÃO AGORA!"
+            title="FAZER PRÉ-INSCRIÇÃO AGORA!"
           >
-            ENTRAR NO GRUPO VIP DO WHATSAPP <WhatsAppOutlined />
-          </Button>
+            <PreInscricaoForm />
+          </MyModal>
         </S.CTA>
       </S.Container>
     </S.Wrapper>
   );
 };
 
-export default HeroWorkshop;
+export default HeroWorkshop3;
