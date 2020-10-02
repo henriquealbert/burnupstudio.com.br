@@ -14,7 +14,7 @@ const HeroWorkshop3 = () => {
       setTimeout(() => {
         document.getElementById('pre-inscricao')?.classList.add('show');
         Cookies.set('viewCpl3', String(Date.now()));
-      }, 2580000);
+      }, 6000);
     }
     if (Cookies.get('viewCpl3')) {
       document.getElementById('pre-inscricao')?.classList.add('show');
