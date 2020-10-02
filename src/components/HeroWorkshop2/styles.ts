@@ -75,12 +75,11 @@ export const NavLinkVideos = styled.nav`
         width: 100%;
         display: block;
         height: auto;
-        filter: grayscale(100%);
       }
     }
-    li:first-child {
+    li:last-child {
       img {
-        filter: none;
+        filter: grayscale(100%);
       }
     }
   }
