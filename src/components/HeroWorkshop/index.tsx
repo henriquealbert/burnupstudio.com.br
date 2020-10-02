@@ -27,7 +27,11 @@ const HeroWorkshop = () => {
                 </Link>
               </li>
               <li>
-                <img src="/img/Thumb2_small.png" alt="Aula 3" />
+                <Link href="/producao/workshop/aula-de-encerramento/">
+                  <a>
+                    <img src="/img/Thumb2_small.png" alt="Aula 3" />
+                  </a>
+                </Link>
               </li>
               <li>
                 <img src="/img/Thumb3_small.png" alt="Aula 4" />

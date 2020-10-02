@@ -110,9 +110,10 @@ export const NavLinkVideos = styled.nav`
 
 export const CTA = styled.div`
   margin-top: 2rem;
-  a {
-    background: #25d366;
-    border: 1px solid #25d366;
+  display: none;
+  button {
+    background: rgba(255, 134, 54, 1);
+    border: 1px solid rgba(255, 134, 54, 1);
     line-height: 1.2;
     padding: 1rem;
 
@@ -121,9 +122,12 @@ export const CTA = styled.div`
     }
 
     &:hover {
-      background: #128c7e;
-      border: 1px solid #128c7e;
+      background: rgba(255, 134, 54, 0.75);
+      border: 1px solid rgba(255, 134, 54, 0.75);
     }
+  }
+  &.show {
+    display: block;
   }
 `;
 
