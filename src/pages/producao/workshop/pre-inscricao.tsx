@@ -1,11 +1,13 @@
-import Header from 'components/Header';
-import PreInscricaoComponent from 'components/screens/PreInscricaoComponent';
+import PreInscricaoScreen from 'components/screens/PreInscricaoScreen';
+import Head from 'next/head';
 
 export default function PreInscricao() {
   return (
     <>
-      <Header />
-      <PreInscricaoComponent />
+      <Head>
+        <title>Faça sua Pré-Inscrição no Curso Completo</title>
+      </Head>
+      <PreInscricaoScreen />
     </>
   );
 }

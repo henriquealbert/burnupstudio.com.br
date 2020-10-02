@@ -3,7 +3,7 @@ import { Button } from 'antd';
 
 import * as S from './styles';
 
-const PreInscricaoComponent = () => {
+const PreInscricaoConfirmadaScreen = () => {
   return (
     <>
       <S.Wrapper>
@@ -35,4 +35,4 @@ const PreInscricaoComponent = () => {
   );
 };
 
-export default PreInscricaoComponent;
+export default PreInscricaoConfirmadaScreen;

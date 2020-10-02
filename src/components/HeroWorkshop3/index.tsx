@@ -1,19 +1,24 @@
-import { useRef, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import Logo from 'components/Logo';
 import Link from 'next/link';
 import MyModal from 'components/MyModal';
 import PreInscricaoForm from 'components/PreInscricaoForm';
+import Cookies from 'js-cookie';
 
 import * as S from './styles';
 
 const HeroWorkshop3 = () => {
-  const modal = useRef(null);
-
   useEffect(() => {
-    setTimeout(() => {
+    if (!Cookies.get('viewCpl3')) {
+      setTimeout(() => {
+        document.getElementById('pre-inscricao')?.classList.add('show');
+        Cookies.set('viewCpl3', String(Date.now()));
+      }, 2580000);
+    }
+    if (Cookies.get('viewCpl3')) {
       document.getElementById('pre-inscricao')?.classList.add('show');
-    }, 2580000);
+    }
   }, []);
 
   return (
@@ -50,14 +55,14 @@ const HeroWorkshop3 = () => {
           </S.NavLinkVideos>
           <S.Video>
             <iframe
-              src="https://fast.wistia.net/embed/iframe/4mddpc2w9r?seo=false&videoFoam=true"
+              src="https://fast.wistia.net/embed/iframe/kxwdlr8f7n?seo=false&videoFoam=true"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           </S.Video>
         </S.WrapperVideoLinks>
-        <S.CTA ref={modal} id="pre-inscricao">
+        <S.CTA id="pre-inscricao">
           <MyModal
             buttonText="FAZER PRÉ-INSCRIÇÃO AGORA!"
             title="FAZER PRÉ-INSCRIÇÃO AGORA!"

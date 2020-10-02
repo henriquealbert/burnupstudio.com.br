@@ -52,7 +52,7 @@ const PreInscricaoForm = () => {
           />
         </Form.Item>
         <Button type="default" htmlType="submit" block>
-          Quero Entrar na Lista Vip de Espera
+          Quero Fazer minha Pré-Inscrição Agora!
         </Button>
         <Input type="hidden" id="source" name="source" value="" />
       </form>
