@@ -26,7 +26,7 @@ export default function PaginaDeVenda() {
         </h3>
         <S.Video>
           <iframe
-            src="https://fast.wistia.net/embed/iframe/kxwdlr8f7n?seo=false&videoFoam=true"
+            src="https://fast.wistia.net/embed/iframe/dhm14m4orf?seo=false&videoFoam=true"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
