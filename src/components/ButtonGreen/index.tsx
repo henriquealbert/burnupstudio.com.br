@@ -1,5 +1,4 @@
 import { Button, withStyles } from '@material-ui/core';
-import green from '@material-ui/core/colors/green';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
 type ButtonProps = {
@@ -12,13 +11,13 @@ type ButtonProps = {
 
 const Btn = withStyles({
   root: {
-    backgroundColor: green[600],
+    backgroundColor: 'rgba(255, 134, 54, 1)',
     color: '#fff',
     fontWeight: 700,
     fontSize: '18px',
     textTransform: 'uppercase',
     padding: '15px 30px',
-    '&:hover': { backgroundColor: green[400], color: '#fff' }
+    '&:hover': { backgroundColor: 'rgba(255, 134, 54, 0.75)', color: '#fff' }
   }
 })(Button);
 

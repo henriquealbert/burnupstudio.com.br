@@ -34,7 +34,7 @@ export default function PaginaDeVenda() {
         </S.Video>
         <ScrollLink to="matricula" smooth={true} duration={1000}>
           <ButtonGreen arrow href="#matricula">
-            Inscreva-se Agora
+            INSCREVA-SE AGORA COM R$600,00 de desconto
           </ButtonGreen>
         </ScrollLink>
       </S.Wrapper>
@@ -711,7 +711,7 @@ export default function PaginaDeVenda() {
               arrow
               href="https://pay.hotmart.com/T14321147M?off=7cmk1ndo&checkoutMode=10&offDiscount=600REAISDESCONTO&bid=1601922956886"
             >
-              Inscreva-se Agora
+              INSCREVA-SE AGORA COM R$600,00 de desconto
             </ButtonGreen>
           </div>
           <ul>
