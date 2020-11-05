@@ -58,6 +58,11 @@ module.exports = withLess({
         source: '/producao/lista-de-espera/confirmado/',
         destination: '/producao/matriculas-abertas/',
         permanent: true
+      },
+      {
+        source: '/404/',
+        destination: '/producao/matriculas-abertas/',
+        permanent: true
       }
     ];
   }

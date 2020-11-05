@@ -57,7 +57,6 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
-          <script src="//code.jivosite.com/widget/6LZbRwIR6L" async></script>
         </Head>
         <body>
           <Main />

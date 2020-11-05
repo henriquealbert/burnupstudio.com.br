@@ -24,17 +24,10 @@ export default function PaginaDeVenda() {
           como <span>Produtor/DJ</span>. Mais de 140 aulas divididas em 14
           Módulos.
         </h3>
-        <S.Video>
-          <iframe
-            src="https://fast.wistia.net/embed/iframe/dhm14m4orf?seo=false&videoFoam=true"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </S.Video>
+
         <ScrollLink to="matricula" smooth={true} duration={1000}>
           <ButtonGreen arrow href="#matricula">
-            INSCREVA-SE AGORA COM R$600,00 de desconto
+            INSCREVA-SE AGORA COM R$500,00 de desconto
           </ButtonGreen>
         </ScrollLink>
       </S.Wrapper>
@@ -701,21 +694,21 @@ export default function PaginaDeVenda() {
             <h4>
               de <span>R$ 997,00</span> por apenas:
             </h4>
-            <h3>R$ 397,00</h3>
+            <h3>R$ 497,00</h3>
             <span>à vista</span>
             <p>
-              ou em até 12x de R$ 38,68
+              ou em até 12x de R$ 48,42
               <span>Menos que o valor de uma pizza!</span>
             </p>
             <ButtonGreen
               arrow
-              href="https://pay.hotmart.com/T14321147M?off=7cmk1ndo&checkoutMode=10&offDiscount=600REAISDESCONTO&bid=1601922956886"
+              href="https://pay.hotmart.com/T14321147M?off=ve71u1if&checkoutMode=10&offDiscount=500REAISDESCONTO&bid=1601922956886"
             >
-              INSCREVA-SE AGORA COM R$600,00 de desconto
+              INSCREVA-SE AGORA COM R$500,00 de desconto
             </ButtonGreen>
           </div>
           <ul>
-            <li>Curso Completo com Acesso Vitalício</li>
+            <li>Curso Completo com Acesso por 12 meses</li>
             <li>Mais de 140 aulas de conteúdo prático</li>
             <li>Módulo bônus de Remix e Bootleg</li>
             <li>Módulo bônus de Psytrance</li>
