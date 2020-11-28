@@ -11,7 +11,6 @@ import { ServerStyleSheets } from '@material-ui/core/styles';
 import { materialTheme } from 'styles/materialTheme';
 import FacebookPixel from 'utils/Pixel/facebook';
 import GoogleAnalyticsPixel from 'utils/Pixel/ga';
-import TawkToScript from '../utils/Pixel/tawkto';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -63,7 +62,6 @@ export default class MyDocument extends Document {
           <Main />
 
           <NextScript />
-          <TawkToScript />
         </body>
       </Html>
     );

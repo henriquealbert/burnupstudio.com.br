@@ -27,7 +27,7 @@ export default function PaginaDeVenda() {
 
         <ScrollLink to="matricula" smooth={true} duration={1000}>
           <ButtonGreen arrow href="#matricula">
-            INSCREVA-SE AGORA COM R$500,00 de desconto
+            INSCREVA-SE AGORA
           </ButtonGreen>
         </ScrollLink>
       </S.Wrapper>
@@ -691,20 +691,17 @@ export default function PaginaDeVenda() {
         </h2>
         <S.Venda>
           <div>
-            <h4>
-              de <span>R$ 997,00</span> por apenas:
-            </h4>
-            <h3>R$ 497,00</h3>
+            <h3>R$ 997,00</h3>
             <span>à vista</span>
             <p>
-              ou em até 12x de R$ 48,42
+              ou em até 12x de R$ 97,14
               <span>Menos que o valor de uma pizza!</span>
             </p>
             <ButtonGreen
               arrow
-              href="https://pay.hotmart.com/T14321147M?off=ve71u1if&checkoutMode=10&offDiscount=500REAISDESCONTO&bid=1601922956886"
+              href="https://pay.hotmart.com/T14321147M?off=ve71u1if&checkoutMode=10&split=12&bid=1601922956886"
             >
-              INSCREVA-SE AGORA COM R$500,00 de desconto
+              INSCREVA-SE AGORA
             </ButtonGreen>
           </div>
           <ul>
