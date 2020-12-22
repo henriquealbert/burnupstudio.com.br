@@ -581,3 +581,18 @@ export const VideosDepoimentos = styled.div`
     justify-content: space-evenly;
   }
 `;
+
+export const PricingTable = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+`;
+
+export const PriceItem = styled.div`
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  @media screen and (min-width: 768px) {
+    margin: 0 2rem;
+  }
+`;

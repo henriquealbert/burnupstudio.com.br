@@ -690,22 +690,52 @@ export default function PaginaDeVenda() {
           Eletrônica do Brasil:
         </h2>
         <S.Venda>
-          <div>
-            <h3>R$ 997,00</h3>
-            <span>à vista</span>
-            <p>
-              ou em até 12x de R$ 97,14
-              <span>Menos que o valor de uma pizza!</span>
-            </p>
-            <ButtonGreen
-              arrow
-              href="https://pay.hotmart.com/T14321147M?off=ve71u1if&checkoutMode=10&split=12&bid=1601922956886"
-            >
-              INSCREVA-SE AGORA
-            </ButtonGreen>
-          </div>
+          <S.PricingTable>
+            <S.PriceItem>
+              <h3>R$ 59,90</h3>
+              <span>por MÊS.</span>
+              <p>
+                Boleto ou cartão de crédito.
+                <span>Acesso ilimitado por 30 dias.</span>
+              </p>
+              <ButtonGreen
+                arrow
+                href="https://pay.hotmart.com/T14321147M?off=2qr7rue6&checkoutMode=10"
+              >
+                Plano Mensal
+              </ButtonGreen>
+            </S.PriceItem>
+            <S.PriceItem>
+              <h3>R$ 497,00</h3>
+              <span>à vista, por ANO.</span>
+              <p>
+                ou em até 12x de R$ 48,42
+                <span>Acesso ilimitado por 12 meses.</span>
+              </p>
+              <ButtonGreen
+                arrow
+                href="https://pay.hotmart.com/T14321147M?off=ve71u1if&checkoutMode=10&split=12"
+              >
+                Plano Anual
+              </ButtonGreen>
+            </S.PriceItem>
+            <S.PriceItem>
+              <h3>R$ 1.297,00</h3>
+              <span>à vista, uma única vez.</span>
+              <p>
+                ou em até 12x de R$ 126,36
+                <span>Acesso ilimitado e Vitalício.</span>
+              </p>
+              <p></p>
+              <ButtonGreen
+                arrow
+                href="https://pay.hotmart.com/T14321147M?off=siy690jt&checkoutMode=10&split=12"
+              >
+                Plano Vitalício
+              </ButtonGreen>
+            </S.PriceItem>
+          </S.PricingTable>
           <ul>
-            <li>Curso Completo com Acesso por 12 meses</li>
             <li>Mais de 140 aulas de conteúdo prático</li>
             <li>Módulo bônus de Remix e Bootleg</li>
             <li>Módulo bônus de Psytrance</li>
