@@ -692,11 +692,11 @@ export default function PaginaDeVenda() {
         <S.Venda>
           <S.PricingTable>
             <S.PriceItem>
-              <h3>R$ 59,90</h3>
+              <h3>R$ 60,00</h3>
               <span>por MÊS.</span>
               <p>
-                Boleto ou cartão de crédito.
-                <span>Acesso ilimitado por 30 dias.</span>
+                Boleto, Pix ou cartão de crédito.
+                <span>Acesso por 30 dias.</span>
               </p>
               <ButtonGreen
                 arrow
@@ -706,30 +706,30 @@ export default function PaginaDeVenda() {
               </ButtonGreen>
             </S.PriceItem>
             <S.PriceItem>
-              <h3>R$ 497,00</h3>
+              <h3>R$ 350,00</h3>
               <span>à vista, por ANO.</span>
               <p>
-                ou em até 12x de R$ 48,42
-                <span>Acesso ilimitado por 12 meses.</span>
+                ou em até 10x de R$ 35,00 <strong>SEM JUROS</strong>
+                <span>Acesso por 12 meses.</span>
               </p>
               <ButtonGreen
                 arrow
-                href="https://pay.hotmart.com/T14321147M?off=ve71u1if&checkoutMode=10&split=12"
+                href="https://pay.hotmart.com/T14321147M?off=d4m9xl4c&checkoutMode=10&split=12"
               >
                 Plano Anual
               </ButtonGreen>
             </S.PriceItem>
             <S.PriceItem>
-              <h3>R$ 1.297,00</h3>
+              <h3>R$ 650,00</h3>
               <span>à vista, uma única vez.</span>
               <p>
-                ou em até 12x de R$ 126,36
+                ou em até 10x de R$ 65,00 <strong>SEM JUROS</strong>
                 <span>Acesso ilimitado e Vitalício.</span>
               </p>
               <p></p>
               <ButtonGreen
                 arrow
-                href="https://pay.hotmart.com/T14321147M?off=siy690jt&checkoutMode=10&split=12"
+                href="https://pay.hotmart.com/T14321147M?off=d1226iqb&checkoutMode=10&split=12"
               >
                 Plano Vitalício
               </ButtonGreen>
@@ -741,7 +741,6 @@ export default function PaginaDeVenda() {
             <li>Módulo bônus de Psytrance</li>
             <li>Módulo bônus de Brazilian Bass</li>
             <li>Módulo bônus de Tech House</li>
-            <li>Curso completo de Marketing para DJs e Produtores</li>
             <li>
               Módulo bônus de Mixagem e Masterização com Plugins nativos do
               Ableton
@@ -757,11 +756,14 @@ export default function PaginaDeVenda() {
           </ul>
         </S.Venda>
         <p>
-          Parcelamentos em até 12 vezes no cartão de crédito. Boleto somente à
-          vista.
+          Parcelamentos em até 10 vezes no cartão de crédito. Boleto somente à
+          vista. Aceitamos Pix e outros meios de pagamento.
         </p>
         <div>
-          <p>07 dias de Garantia ou seu dinheiro de volta.</p>
+          <p>
+            <u>07 dias de Garantia ou seu dinheiro de volta</u>, basta nos
+            enviar um email pedindo o reembolso, sem letras miúdas.
+          </p>
           <img src="/img/formasdepagamento.png" alt="Formas de Pagamento" />
         </div>
       </S.Pagamento>
@@ -773,7 +775,7 @@ export default function PaginaDeVenda() {
           <h2>Sobre o Instrutor</h2>
           <p>
             Professor de Produção de Música Eletrônica, Produtor desde 2009,
-            atuou como Dj por 5 anos, empreendedor digital, fundador da “Burn Up
+            atuou como Dj por 6 anos, empreendedor digital, fundador da “Burn Up
             Studio”, criador do curso de Produção de Música Eletrônica “Alpha
             Experience”.
           </p>
@@ -905,7 +907,10 @@ export default function PaginaDeVenda() {
           Atendimento via Whatsapp (41) 9 9146-6936
         </strong>
       </S.Faq>
-      <S.Footer>© 2020 Burn Up Studio – Todos os Direitos Reservados.</S.Footer>
+      <S.Footer>
+        © {new Date().getFullYear()} Burn Up Studio – Todos os Direitos
+        Reservados.
+      </S.Footer>
     </div>
   );
 }
