@@ -1,16 +1,13 @@
 import {
-  Grid,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails
-} from '@material-ui/core';
-import { Rating } from '@material-ui/lab';
-import ButtonGreen from 'components/ButtonGreen';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ReactPlayer from 'react-player';
-import { Link as ScrollLink } from 'react-scroll';
+  Accordion, AccordionDetails, AccordionSummary, Grid
+} from '@material-ui/core'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+import { Rating } from '@material-ui/lab'
+import ButtonGreen from 'components/ButtonGreen'
+import ReactPlayer from 'react-player'
+import { Link as ScrollLink } from 'react-scroll'
+import * as S from './styles'
 
-import * as S from './styles';
 
 export default function PaginaDeVenda() {
   return (
@@ -691,49 +688,22 @@ export default function PaginaDeVenda() {
         </h2>
         <S.Venda>
           <S.PricingTable>
+
             <S.PriceItem>
-              <h3>R$ 60,00</h3>
-              <span>por MÊS.</span>
-              <p>
-                Boleto, Pix ou cartão de crédito.
-                <span>Acesso por 30 dias.</span>
-              </p>
-              <ButtonGreen
-                arrow
-                href="https://pay.hotmart.com/T14321147M?off=2qr7rue6&checkoutMode=10"
-              >
-                Plano Mensal
-              </ButtonGreen>
-            </S.PriceItem>
-            <S.PriceItem>
-              <h3>R$ 350,00</h3>
+              <h3>R$ 200,00</h3>
               <span>à vista, por ANO.</span>
               <p>
-                ou em até 10x de R$ 35,00 <strong>SEM JUROS</strong>
+                ou em até 10x de R$ 20,00 <strong>SEM JUROS</strong>
                 <span>Acesso por 12 meses.</span>
               </p>
               <ButtonGreen
                 arrow
-                href="https://pay.hotmart.com/T14321147M?off=d4m9xl4c&checkoutMode=10&split=12"
+                href="https://pay.hotmart.com/T14321147M?off=j279zm6a&split=10"
               >
                 Plano Anual
               </ButtonGreen>
             </S.PriceItem>
-            <S.PriceItem>
-              <h3>R$ 650,00</h3>
-              <span>à vista, uma única vez.</span>
-              <p>
-                ou em até 10x de R$ 65,00 <strong>SEM JUROS</strong>
-                <span>Acesso ilimitado e Vitalício.</span>
-              </p>
-              <p></p>
-              <ButtonGreen
-                arrow
-                href="https://pay.hotmart.com/T14321147M?off=d1226iqb&checkoutMode=10&split=12"
-              >
-                Plano Vitalício
-              </ButtonGreen>
-            </S.PriceItem>
+
           </S.PricingTable>
           <ul>
             <li>Mais de 140 aulas de conteúdo prático</li>
@@ -746,10 +716,7 @@ export default function PaginaDeVenda() {
               Ableton
             </li>
             <li>
-              Grupo de WhatsApp para suporte, feedback de tracks e networking
-            </li>
-            <li>
-              Tire todas as suas dúvidas direto com o Professor pelo WhatsApp
+              Grupo de WhatsApp para conhecer outros alunos.
             </li>
             <li>Certificado de Conclusão</li>
             <li>Lançamento da sua track</li>
@@ -852,8 +819,7 @@ export default function PaginaDeVenda() {
             </AccordionSummary>
             <AccordionDetails>
               <p>
-                Sim, acesso direto do Whatsapp do professor para tirar dúvidas e
-                mais o grupo fechado do Whatsapp também.
+                Não, somete o acesso ao grupo do WhatsApp para tirar dúvidas com outros alunos.
               </p>
             </AccordionDetails>
           </Accordion>
@@ -903,8 +869,6 @@ export default function PaginaDeVenda() {
           Se há alguma coisa que você não tenha certeza, nada que não tenhamos
           deixado claro; quaisquer preocupações ou perguntas, por favor, entre
           em contato conosco em burnupstudio@gmail.com e nós iremos ajudá-lo.
-          <br />
-          Atendimento via Whatsapp (41) 9 9146-6936
         </strong>
       </S.Faq>
       <S.Footer>
