@@ -1,13 +1,15 @@
 import {
-  Accordion, AccordionDetails, AccordionSummary, Grid
-} from '@material-ui/core'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
-import { Rating } from '@material-ui/lab'
-import ButtonGreen from 'components/ButtonGreen'
-import ReactPlayer from 'react-player'
-import { Link as ScrollLink } from 'react-scroll'
-import * as S from './styles'
-
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Grid
+} from '@material-ui/core';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Rating } from '@material-ui/lab';
+import ButtonGreen from 'components/ButtonGreen';
+import ReactPlayer from 'react-player';
+import { Link as ScrollLink } from 'react-scroll';
+import * as S from './styles';
 
 export default function PaginaDeVenda() {
   return (
@@ -688,7 +690,6 @@ export default function PaginaDeVenda() {
         </h2>
         <S.Venda>
           <S.PricingTable>
-
             <S.PriceItem>
               <h3>R$ 200,00</h3>
               <span>à vista, por ANO.</span>
@@ -703,7 +704,6 @@ export default function PaginaDeVenda() {
                 Plano Anual
               </ButtonGreen>
             </S.PriceItem>
-
           </S.PricingTable>
           <ul>
             <li>Mais de 140 aulas de conteúdo prático</li>
@@ -715,9 +715,7 @@ export default function PaginaDeVenda() {
               Módulo bônus de Mixagem e Masterização com Plugins nativos do
               Ableton
             </li>
-            <li>
-              Grupo de WhatsApp para conhecer outros alunos.
-            </li>
+            <li>Grupo de WhatsApp para conhecer outros alunos.</li>
             <li>Certificado de Conclusão</li>
             <li>Lançamento da sua track</li>
           </ul>
@@ -819,7 +817,8 @@ export default function PaginaDeVenda() {
             </AccordionSummary>
             <AccordionDetails>
               <p>
-                Não, somete o acesso ao grupo do WhatsApp para tirar dúvidas com outros alunos.
+                Não, somete o acesso ao grupo do WhatsApp para tirar dúvidas com
+                outros alunos.
               </p>
             </AccordionDetails>
           </Accordion>
